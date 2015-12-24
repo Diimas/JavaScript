@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STUDENT LIST</title>
+	<meta charset="UTF-8">
+	<style>
+		td, tr, th{
+			border: 1px solid;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<table class='students-list'>
+		<thead>
+			<tr>
+				<th>№</th>
+				<th>Name</th>
+				<th>Data</th>
+				<th>Age</th>
+				<th>Mark</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+	</table>
+	<!-- <button class="send">send</button> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+var students = [
+	 {
+		name: 'Vasiya',
+		date: '24.12.15',
+		age: 39,
+		mark: 80
+	},
+	{
+		name: 'Kesha',
+		date: '20.02.15',
+		age: 18,
+		mark: 99
+	}
+];
+	for (var i = 0; i <= students.length; i++) {
+		$('.students-list').append(
+			'<tr><td></td><td>'  + students[i].name + 
+			'</td><td>' + students[i].date + 
+			'</td><td>' + students[i].age + 
+			'</td><td>' + students[i].mark +
+			'</td></tr>'
+			)
+	};
+
+
+
+// $('.students-list').append(
+// 	'<tr><td>&nbsp;</td><td>'  + students.student1.name + 
+// 	'</td><td>' + students.student1.date + 
+// 	'</td><td>' + students.student1.age + 
+// 	'</td><td>' + students.student1.mark +
+// 	'</td></tr>'
+// 	);
+// $('.students-list').append(
+// 	'<tr><td>&nbsp;</td><td>'  + students.student2.name + 
+// 	'</td><td>' + students.student2.date + 
+// 	'</td><td>' + students.student2.age + 
+// 	'</td><td>' + students.student2.mark +
+// 	'</td></tr>'
+// 	);
+
+
+</script>
+</body>
+</html>
