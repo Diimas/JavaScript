@@ -4,6 +4,9 @@
 	<title>STUDENT LIST</title>
 	<meta charset="UTF-8">
 	<style>
+		table {
+			border-collapse: collapse;
+		}
 		td, tr, th{
 			border: 1px solid;
 			padding: 0;
@@ -43,8 +46,9 @@ var students = [
 	}
 ];
 	for (var i = 0; i <= students.length; i++) {
+		var n = i + 1;
 		$('.students-list').append(
-			'<tr><td></td><td>'  + students[i].name + 
+			'<tr><td>' + n + '</td><td>'  + students[i].name + 
 			'</td><td>' + students[i].date + 
 			'</td><td>' + students[i].age + 
 			'</td><td>' + students[i].mark +
@@ -52,22 +56,6 @@ var students = [
 			)
 	};
 
-
-
-// $('.students-list').append(
-// 	'<tr><td>&nbsp;</td><td>'  + students.student1.name + 
-// 	'</td><td>' + students.student1.date + 
-// 	'</td><td>' + students.student1.age + 
-// 	'</td><td>' + students.student1.mark +
-// 	'</td></tr>'
-// 	);
-// $('.students-list').append(
-// 	'<tr><td>&nbsp;</td><td>'  + students.student2.name + 
-// 	'</td><td>' + students.student2.date + 
-// 	'</td><td>' + students.student2.age + 
-// 	'</td><td>' + students.student2.mark +
-// 	'</td></tr>'
-// 	);
 
 
 </script>
